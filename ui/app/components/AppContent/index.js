@@ -16,7 +16,7 @@ const styles = {
     padding: 17,
     position: 'fixed',
     bottom: 0,
-    left: 0,
+    left: 1,
   },
 };
 

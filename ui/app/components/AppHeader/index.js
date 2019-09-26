@@ -119,7 +119,8 @@ export class AppHeader extends React.Component {
             item xs = { 12 } >
             <
             Hidden only = {
-                ['xs', 'sm'] } >
+                ['xs', 'sm']
+            } >
             <
             Grid className = { classes.languageSelectContainer } >
             <
@@ -127,8 +128,8 @@ export class AppHeader extends React.Component {
             uiLanguage = { this.props.uiLanguage }
             uiLanguages = { this.props.uiLanguages }
             onChangeLanguage = { this.props.onChangeLanguage }
-            /> <
-            /Grid> <
+            /> < /
+            Grid > <
             ConversationBar uiLanguage = { this.props.uiLanguage }
             uiLanguages = { this.props.uiLanguages }
             onChangeLanguage = { this.props.onChangeLanguage }
@@ -145,8 +146,8 @@ export class AppHeader extends React.Component {
                     img className = { classes.logo }
                     src = { logo }
                     alt = { intl.formatMessage(messages.articulateLogoAlt) }
-                    /> <
-                    /a>
+                    /> < /
+                    a >
                 ) : ( <
                     Link onClick = {
                         () => {
@@ -158,8 +159,8 @@ export class AppHeader extends React.Component {
                     img className = { classes.logo }
                     src = { logo }
                     alt = { intl.formatMessage(messages.articulateLogoAlt) }
-                    /> <
-                    /Link>
+                    /> < /
+                    Link >
                 )
             } <
             /Grid> <
@@ -170,8 +171,7 @@ export class AppHeader extends React.Component {
             Grid className = { classes.agentsButtonContainer }
             item xl = { 2 }
             lg = { 2 }
-            md = { 2 } >
-            {
+            md = { 2 } > {
                 this.props.location.pathname.indexOf('connection') === -1 &&
                 this.props.location.pathname.indexOf('settings') === -1 &&
                 this.props.location.pathname.indexOf('login') === -1 &&
@@ -181,8 +181,8 @@ export class AppHeader extends React.Component {
                 this.props.location.pathname !== '/' ? ( <
                     Typography className = { classes.agentName }
                     style = {
-                        { color: agent.uiColor } } >
-                    {
+                        { color: agent.uiColor }
+                    } > {
                         gravatars[agent.gravatar - 1]({
                             color: agent.uiColor,
                             className: classes.agentIcon,
@@ -199,15 +199,16 @@ export class AppHeader extends React.Component {
                             this.props.onShareAgent(agent.id);
                         }
                     }
-                    /> <
-                    /Tooltip> <
+                    /> < /
+                    Tooltip > <
                     /Typography>
                 ) : null
             } <
-            /Grid> <
-            /Hidden> <
+            /Grid> < /
+            Hidden > <
             Hidden only = {
-                ['md', 'lg', 'xl'] } > {
+                ['md', 'lg', 'xl']
+            } > {
                 demoMode ? ( <
                     ConversationBar uiLanguage = { this.props.uiLanguage }
                     uiLanguages = { this.props.uiLanguages }
@@ -224,8 +225,8 @@ export class AppHeader extends React.Component {
                     uiLanguage = { this.props.uiLanguage }
                     uiLanguages = { this.props.uiLanguages }
                     onChangeLanguage = { this.props.onChangeLanguage }
-                    /> <
-                    /Grid> <
+                    /> < /
+                    Grid > <
                     ConversationBar uiLanguage = { this.props.uiLanguage }
                     uiLanguages = { this.props.uiLanguages }
                     onChangeLanguage = { this.props.onChangeLanguage }
@@ -249,10 +250,10 @@ export class AppHeader extends React.Component {
                     alt = { intl.formatMessage(messages.articulateLogoAlt) }
                     /> <
                     FormattedMessage {...messages.agentsButton }
-                    /> <
-                    /Button> <
-                    /Link> <
-                    /Grid> <
+                    /> < /
+                    Button > <
+                    /Link> < /
+                    Grid > <
                     Grid item sm = { 6 }
                     xs = { 6 } >
                     <
@@ -270,20 +271,21 @@ export class AppHeader extends React.Component {
                     alt = { intl.formatMessage(messages.articulateLogoAlt) }
                     /> <
                     FormattedMessage {...messages.openChatButton }
-                    /> <
-                    /Button> <
-                    /Grid> <
-                    /Fragment>
+                    /> < /
+                    Button > <
+                    /Grid> < /
+                    Fragment >
                 )
             } <
-            /Hidden> <
-            /Grid>
+            /Hidden> < /
+            Grid >
         ) : ( <
             Grid container className = { classes.header }
             item xs = { 12 } >
             <
             Hidden only = {
-                ['xs', 'sm'] } >
+                ['xs', 'sm']
+            } >
             <
             Grid item xl = { 2 }
             lg = { 2 }
@@ -295,8 +297,8 @@ export class AppHeader extends React.Component {
                     img className = { classes.logo }
                     src = { logo }
                     alt = { intl.formatMessage(messages.articulateLogoAlt) }
-                    /> <
-                    /a>
+                    /> < /
+                    a >
                 ) : ( <
                     Link onClick = {
                         () => {
@@ -308,8 +310,8 @@ export class AppHeader extends React.Component {
                     img className = { classes.logo }
                     src = { logo }
                     alt = { intl.formatMessage(messages.articulateLogoAlt) }
-                    /> <
-                    /Link>
+                    /> < /
+                    Link >
                 )
             } <
             /Grid> <
@@ -320,8 +322,7 @@ export class AppHeader extends React.Component {
             Grid className = { classes.agentsButtonContainer }
             item xl = { 2 }
             lg = { 2 }
-            md = { 2 } >
-            {
+            md = { 2 } > {
                 this.props.location.pathname.indexOf('connection') === -1 &&
                 this.props.location.pathname.indexOf('settings') === -1 &&
                 this.props.location.pathname.indexOf('login') === -1 &&
@@ -331,8 +332,8 @@ export class AppHeader extends React.Component {
                 this.props.location.pathname !== '/' ? ( <
                     Typography className = { classes.agentName }
                     style = {
-                        { color: agent.uiColor } } >
-                    {
+                        { color: agent.uiColor }
+                    } > {
                         gravatars[agent.gravatar - 1]({
                             color: agent.uiColor,
                             className: classes.agentIcon,
@@ -349,8 +350,8 @@ export class AppHeader extends React.Component {
                             this.props.onShareAgent(agent.id);
                         }
                     }
-                    /> <
-                    /Tooltip> <
+                    /> < /
+                    Tooltip > <
                     /Typography>
                 ) : null
             } <
@@ -368,7 +369,8 @@ export class AppHeader extends React.Component {
                             div key = "conversationNotificationDot"
                             className = { classes.notificationDot }
                             style = {
-                                { backgroundColor: notificationDotColor } }
+                                { backgroundColor: notificationDotColor }
+                            }
                             />
                         ) : null,
 
@@ -388,8 +390,8 @@ export class AppHeader extends React.Component {
                             alt = { intl.formatMessage(messages.articulateLogoAlt) }
                             /> <
                             FormattedMessage {...messages.openChatButton }
-                            /> <
-                            /Button>
+                            /> < /
+                            Button >
                         ), <
                         LanguageSelect
                         key = "selectLanguage"
@@ -406,10 +408,11 @@ export class AppHeader extends React.Component {
                     />
                 )
             } <
-            /Grid> <
-            /Hidden> <
+            /Grid> < /
+            Hidden > <
             Hidden only = {
-                ['md', 'lg', 'xl'] } > {
+                ['md', 'lg', 'xl']
+            } > {
                 demoMode ? ( <
                     Grid item xs = { 4 } >
                     <
@@ -419,8 +422,8 @@ export class AppHeader extends React.Component {
                     img className = { classes.logo }
                     src = { logo }
                     alt = { intl.formatMessage(messages.articulateLogoAlt) }
-                    /> <
-                    /a> <
+                    /> < /
+                    a > <
                     /Grid>
                 ) : ( <
                     Grid item sm = { 6 }
@@ -434,8 +437,8 @@ export class AppHeader extends React.Component {
                         this.props.location.pathname !== '/' ? ( <
                             Typography className = { classes.agentName }
                             style = {
-                                { color: agent.uiColor } } >
-                            {
+                                { color: agent.uiColor }
+                            } > {
                                 gravatars[agent.gravatar - 1]({
                                     color: agent.uiColor,
                                     className: classes.agentIcon,
@@ -452,8 +455,8 @@ export class AppHeader extends React.Component {
                                     this.props.onShareAgent(agent.id);
                                 }
                             }
-                            /> <
-                            /Tooltip> <
+                            /> < /
+                            Tooltip > <
                             /Typography>
                         ) : null
                     } <
@@ -467,7 +470,8 @@ export class AppHeader extends React.Component {
                             div key = "conversationNotificationDot"
                             className = { classes.notificationDot }
                             style = {
-                                { backgroundColor: notificationDotColor } }
+                                { backgroundColor: notificationDotColor }
+                            }
                             />
                         ) : null,
                         chatButtonOpen && ( <
@@ -481,15 +485,16 @@ export class AppHeader extends React.Component {
                             variant = "contained"
                             className = { classes.openChat }
                             style = {
-                                { marginLeft: '15px' } } >
+                                { marginLeft: '15px' }
+                            } >
                             <
                             img className = { classes.icon }
                             src = { chatIcon }
                             alt = { intl.formatMessage(messages.articulateLogoAlt) }
                             /> <
                             FormattedMessage {...messages.openChatButtonSmall }
-                            /> <
-                            /Button>
+                            /> < /
+                            Button >
                         ), <
                         LanguageSelect
                         key = "selectLanguage"
@@ -506,8 +511,8 @@ export class AppHeader extends React.Component {
                     />
                 )
             } <
-            /Grid> <
-            /Hidden> <
+            /Grid> < /
+            Hidden > <
             /Grid>
         );
     }
